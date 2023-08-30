@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Simple</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      function Header({title}){
+        //console.log(title);
+        //return <h1>{title}</h1>;
+
+        return <h1>{title ? title : 'Default React Title'}</h1>;
+
+      }
+
+      function HomePage() {
+        return (
+          <div>
+            <Header />
+            <Header title='React :)' />
+            <Header title='NextReact Title' />
+          </div>
+        )
+      }
+
+      ReactDOM.render(<HomePage />, app);
+    </script>
+  </body>
+</html>
