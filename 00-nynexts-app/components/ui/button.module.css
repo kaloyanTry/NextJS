@@ -1,0 +1,20 @@
+.btn {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  width: 8rem;
+  background-color: #8d2c00;
+  border-radius: 0.2rem;
+  border: none;
+  color: #fffbbd;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #aa3600;
+  color: #fffcd4;
+}
