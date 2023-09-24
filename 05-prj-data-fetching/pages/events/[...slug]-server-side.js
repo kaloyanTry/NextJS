@@ -64,7 +64,7 @@ export async function getServerSideProps(context) {
   ) {
     return {
       props: { hasError: true },
-      // notFound: true, // alternative wway of error handling
+      // notFound: true, // alternative way of error handling
     };
   }
 
