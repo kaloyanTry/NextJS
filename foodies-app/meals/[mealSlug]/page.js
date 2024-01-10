@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function MealsDynamicPage() {
   return (
     <>
-      <h2>Meal Details Page</h2>
+      <h1>Meal Details Page</h1>
       <p>Dynamic Route</p>
     </>
   );
